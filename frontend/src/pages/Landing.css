@@ -1,26 +1,53 @@
-.right-div:hover{
+.right-div:hover {
     background-color: #212121;
     color: white;
+    border: 1px solid white;
 }
-.left-div:hover{  
+
+.left-div:hover {
     background-color: #212121;
     color: white;
+    border: 1px solid white
 }
-.getlawyer-btn:hover{
+
+.getlawyer-btn:hover {
     background-color: #212121;
     color: white;
+    border: 1px solid white
 }
+
 .container {
     display: grid;
-    grid-template-columns: repeat(3, 1fr); /* Three equal-width columns */
-    grid-gap: 10px; /* Adjust the gap between cells */
+    grid-template-columns: repeat(3, 1fr);
+    /* Three equal-width columns */
+    grid-gap: 2em;
+    /* Adjust the gap between cells */
 }
+
 .item {
     border: 1px solid #ccc;
     padding: 10px;
     text-align: center;
 }
-.login-btn:hover{
+
+.login-btn:hover {
     background-color: white;
     color: #212121;
+    border: 1px solid #212121;
 }
+
+.card {
+    background-color: #fff;
+    color: #000;
+    border-radius: 10px;
+    margin: 20px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    border: 1px solid #ffc107;
+    transition: transform 0.3s;
+  }
+
+  .card:hover {
+    filter: brightness(0.8);
+    transform: scale(1.05);
+  }

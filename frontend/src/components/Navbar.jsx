@@ -7,13 +7,7 @@ export default function Navbar() {
     const  navigate = useNavigate()
     return (
         <>
-            <div className="p-4 bg-[#212121] text-white font-semibold flex justify-between">
-                <NavLink to='/user/getlawyer'>
-                    <div className="">Get a Lawyer</div>
-                </NavLink>
-                <NavLink to='/user/getlawyer'>
-                    <div className="">Get a Lawyer</div>
-                </NavLink>
+            <div className="p-4 text-white bg-[#212121] font-semibold flex justify-between">
                 <NavLink to='/user/getlawyer'>
                     <div className="">Get a Lawyer</div>
                 </NavLink>
@@ -25,7 +19,8 @@ export default function Navbar() {
                     }
                 }>logout</button>
                 :
-                null
+                <button className='login-btn border bg-[#ffc107] border-white px-4 py-2 rounded-sm' onClick={()=>navigate('/')}>Login</button>
+            
             }
             </div>
         </>

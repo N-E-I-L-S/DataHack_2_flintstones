@@ -2,13 +2,14 @@ import React, { useState } from 'react'
 import UserAuth from '../../context/UserAuth'
 import { useEffect } from 'react'
 import Loader from '../../components/Loader'
+import { useParams } from 'react-router-dom'
 
 export default function ProfilePage() {
-
+    const name = useParams()
     const { user } = UserAuth()
     const [userdetails, setUserDetails] = useState("")
     async function getUser() {
-        const url = ``
+        const url = `http://localhost:3001/lawyer/name/${name.name}`
         const body = ""
         try {
             const response = await fetch(url, {
@@ -43,7 +44,7 @@ export default function ProfilePage() {
         <h1>{user.email}</h1>
         <div>
             {
-                userdetails.requests?.map((i)=>{
+                userdetails.hire?.map((i)=>{
                     return(
                         <div>
                             {i}

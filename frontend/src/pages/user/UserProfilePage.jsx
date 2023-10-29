@@ -21,14 +21,18 @@ export default function ProfilePage() {
         {
           userdetails.hire?.map((i)=>{
             return(
-              <p key={i}>{i}</p>
+              <>
+              <p key={i}>{i}</p> <br/>
+              </>
             )
           })
         }
         {
           userdetails.bookmarks?.map((i)=>{
             return(
-              <p key={i}>{i}</p>
+              <>
+              <p key={i}>{i}</p> <br/>
+              </>
             )
           })
         }
