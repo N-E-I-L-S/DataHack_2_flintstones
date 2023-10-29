@@ -11,6 +11,7 @@ import UserProfilePage from './pages/user/UserProfilePage';
 import Login from './pages/lawyer/Login';
 import Profile from './pages/lawyer/Profile';
 import ProfilePage from './pages/lawyer/ProfilePage';
+import SpeechRecognition from './components/SpeechRecognition';
 
 function App() {
   return (
@@ -21,13 +22,15 @@ function App() {
         <Route path='/user/login' element={<UserLogin/>}/>
         <Route path='/user/displaylawyer' element={<DisplayLawyer/>}/>
         <Route path='/user/getlawyer' element={<GetLawyer/>}/>
-        <Route path='/user/onelawyer/:id' element={<OneLawyer/>}/>
+        <Route path='/user/onelawyer/:name' element={<OneLawyer/>}/>
         <Route path='/user/profile' element={<UserProfile/>}/>
         <Route path='/user/profilepage' element={<UserProfilePage/>}/>
         
         <Route path='/lawyer/login' element={<Login/>}/>
         <Route path='/lawyer/profile' element={<Profile/>}/>
         <Route path='/lawyer/profilepage' element={<ProfilePage/>}/>
+
+        <Route path='/speech' element={<SpeechRecognition/>}/>
       </Routes>
     </Router>
     </>

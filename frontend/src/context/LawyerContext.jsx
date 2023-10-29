@@ -4,9 +4,9 @@ const LawyersContext = createContext();
 export function LawyersProvider({ children }) {
 
     const [alllawyers, setAllLawyers] = useState("")
-
+    const [lawtype, setLawType] = useState("")
     return (
-        <LawyersContext.Provider value={{alllawyers, setAllLawyers}}>
+        <LawyersContext.Provider value={{alllawyers, setAllLawyers, lawtype, setLawType}}>
             {children}
         </LawyersContext.Provider>
     )

@@ -13,7 +13,9 @@ app.use(bodyParser.urlencoded({ extended: false }))
 app.use(bodyParser.json())
 app.use(express.json())
 
-app.use('/lawyer', require('./controller'));
+app.use('/lawyer', require('./lawyercontroller.js'));
+app.use('/user', require('./usercontroller.js'));
+app.use('/api', require('./apicontroller.js'))
 
 app.get('/', (req, res)=>{
     const timestamp = new Date().getTime()

@@ -1,44 +1,40 @@
 const mongoose = require('mongoose');
 const { Schema } = mongoose;
 
-const ProductsSchema = new Schema({
-        id:{
-            type : String,
-            required: true,
-        },
+const Products = new Schema({
         name: {
             type: String,
             required: true
         },
-        // type: {
-        //     type: String,
-        //     required: true,
-        // },
-        // price :{
-        //     type : Number,
-        //     required : true,
-        // },
-        // colors: {
-        //     type: Array,
-        //     required: true,
-        // },
-        // image: {
-        //     type: String,
-        //     required: true,
-        // },
-        // description :{
-        //     type : String,
-        //     required : true,
-        // },
-        // category :{
-        //     type : String,
-        //     required : true,
-        // },
-        // featured :{
-        //     type : Boolean,
-        //     required : true,
-        // }
+        jusrisdiction:{
+            type: Array,
+            required: true
+        },
+        languages:{
+            type: Array,
+            required: true
+        },
+        feedback:{
+            type: Number,
+            required: false,
+        },
+        location:{
+            type: String,
+            required: true
+        },
+        probono:{
+            type: Boolean,
+            required : false,
+        },
+        demographics:{
+            type: String,
+            required: true
+        },
+        hire:{
+            type: Array,
+            required: false
+        }
 }, 
 { collection: 'lawyerdb' }
 );
-module.exports = mongoose.model('lawyerdb', ProductsSchema)
+module.exports = mongoose.model('lawyerdb', Products)

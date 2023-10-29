@@ -1,8 +1,26 @@
 .right-div:hover{
-    background-color: black;
+    background-color: #212121;
     color: white;
 }
 .left-div:hover{  
-    background-color: black;
+    background-color: #212121;
     color: white;
+}
+.getlawyer-btn:hover{
+    background-color: #212121;
+    color: white;
+}
+.container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Three equal-width columns */
+    grid-gap: 10px; /* Adjust the gap between cells */
+}
+.item {
+    border: 1px solid #ccc;
+    padding: 10px;
+    text-align: center;
+}
+.login-btn:hover{
+    background-color: white;
+    color: #212121;
 }
